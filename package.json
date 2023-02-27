@@ -1,6 +1,6 @@
 {
   "name": "weather-dashboard",
-  "homepage": "https://myweatherdashboard.netlify.app",
+  "homepage": "https://myweatherdashboard.netlify.app/",
   "private": true,
   "version": "2.0.0",
   "type": "module",

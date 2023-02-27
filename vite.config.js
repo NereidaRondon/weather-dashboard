@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react';
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/myweatherdashboard.netlify.app/',
+  // base: '/myweatherdashboard.netlify.app/',
   plugins: [react()],
 });
