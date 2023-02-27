@@ -24,8 +24,6 @@ export default function Home() {
     import.meta.env.VITE_REACT_APP_GOOGLE_MAP_KEY
   }`;
 
-  //const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyB6cX12PWCvxLFC9OtXot3Pox9MJgZtGQo`;
-
   //weather api url
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER}&units=imperial`;
 
@@ -59,12 +57,7 @@ export default function Home() {
     return (
       <div>
         {data.main ? (
-          <img
-            className='static-map'
-            src={staticURL}
-            //src={`https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=${zoom}&size=${size}&key=AIzaSyB6cX12PWCvxLFC9OtXot3Pox9MJgZtGQo`}
-            alt={`map of ${data.name}`}
-          />
+          <img className='static-map' src={staticURL} alt={`map of ${data.name}`} />
         ) : null}
 
         {data.sys ? (
