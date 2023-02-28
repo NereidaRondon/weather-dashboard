@@ -13,16 +13,13 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [lat, setLat] = useState('');
   const [lon, setLon] = useState('');
+  const mapKey = import.meta.env.API_KEY;
 
-  const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${
-    import.meta.env.VITE_REACT_APP_GOOGLE_MAP_KEY
-  }`;
+  const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${mapKey}`;
 
   const size = '500x400';
   const zoom = 10;
-  const staticURL = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=${zoom}&size=${size}&key=${
-    import.meta.env.VITE_REACT_APP_GOOGLE_MAP_KEY
-  }`;
+  const staticURL = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=${zoom}&size=${size}&key=${mapKey}`;
 
   //weather api url
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER}&units=imperial`;

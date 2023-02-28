@@ -8,6 +8,8 @@ export default function BigMap() {
   const [location, setLocation] = useState('');
   const [showMap, setShowMap] = useState(false);
 
+  const mapKey = import.meta.env.API_KEY;
+
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
       searchLocation();
@@ -20,9 +22,7 @@ export default function BigMap() {
     console.log(location);
     setShowMap(true);
   }
-  const getMap = `https://www.google.com/maps/embed/v1/place?key=${
-    import.meta.env.VITE_REACT_APP_GOOGLE_MAP_KEY
-  }&q=${location}`;
+  const getMap = `https://www.google.com/maps/embed/v1/place?key=${mapKey}&q=${location}`;
 
   function SearchBar() {
     return (
