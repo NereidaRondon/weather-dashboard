@@ -8,18 +8,18 @@ import refresh from '../images/refresh.svg';
 import Footer from './Footer.jsx';
 
 export const WEATHER = 'c32b649490f1417ec2b6d663c05a1a21';
-export const mapKey = import.meta.env.API_KEY;
+export const MAP = import.meta.env.VITE_MAP_API_KEY;
 
 export default function Home() {
   const [data, setData] = useState([]);
   const [lat, setLat] = useState('');
   const [lon, setLon] = useState('');
 
-  const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${mapKey}`;
+  const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${MAP}`;
 
   const size = '500x400';
   const zoom = 10;
-  const staticURL = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=${zoom}&size=${size}&key=${mapKey}`;
+  const staticURL = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=${zoom}&size=${size}&key=${MAP}`;
 
   //weather api url
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${WEATHER}&units=imperial`;

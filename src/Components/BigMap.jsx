@@ -21,7 +21,7 @@ export default function BigMap() {
     console.log(location);
     setShowMap(true);
   }
-  const getMap = `https://www.google.com/maps/embed/v1/place?key=${mapKey}&q=${location}`;
+  const getMap = `https://www.google.com/maps/embed/v1/place?key=${MAP}&q=${location}`;
 
   function SearchBar() {
     return (
