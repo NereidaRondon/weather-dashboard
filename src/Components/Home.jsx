@@ -13,6 +13,7 @@ export default function Home() {
   const [data, setData] = useState([]);
   const [lat, setLat] = useState('');
   const [lon, setLon] = useState('');
+
   const mapKey = import.meta.env.API_KEY;
 
   const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${mapKey}`;

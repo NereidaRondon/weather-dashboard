@@ -2,13 +2,12 @@ import React from 'react';
 import { useState, useRef } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
+import { mapKey } from './Home.jsx';
 
 export default function BigMap() {
   const inputLocation = useRef(null);
   const [location, setLocation] = useState('');
   const [showMap, setShowMap] = useState(false);
-
-  const mapKey = import.meta.env.API_KEY;
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
