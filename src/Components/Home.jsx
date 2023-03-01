@@ -8,13 +8,13 @@ import refresh from '../images/refresh.svg';
 import Footer from './Footer.jsx';
 
 export const WEATHER = 'c32b649490f1417ec2b6d663c05a1a21';
-export const MAP = import.meta.env.VITE_MAP_API_KEY;
 
 export default function Home() {
   const [data, setData] = useState([]);
   const [lat, setLat] = useState('');
   const [lon, setLon] = useState('');
 
+  const MAP = import.meta.env.MAP_API_KEY;
   const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${MAP}`;
 
   const size = '500x400';

@@ -2,7 +2,6 @@ import React from 'react';
 import { useState, useRef } from 'react';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-import { mapKey } from './Home.jsx';
 
 export default function BigMap() {
   const inputLocation = useRef(null);
@@ -21,7 +20,9 @@ export default function BigMap() {
     console.log(location);
     setShowMap(true);
   }
-  const getMap = `https://www.google.com/maps/embed/v1/place?key=${MAP}&q=${location}`;
+  const getMap = `https://www.google.com/maps/embed/v1/place?key=${
+    import.meta.env.MAP_API_KEY
+  }&q=${location}`;
 
   function SearchBar() {
     return (
