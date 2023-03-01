@@ -15,13 +15,13 @@ export default function Home() {
   const [lon, setLon] = useState('');
 
   const geoURL = `https://www.googleapis.com/geolocation/v1/geolocate?key=${
-    import.meta.env.MAP_API_KEY
+    import.meta.env.VITE_MAP_API_KEY
   }`;
 
   const size = '500x400';
   const zoom = 10;
   const staticURL = `https://maps.googleapis.com/maps/api/staticmap?center=${lat},${lon}&zoom=${zoom}&size=${size}&key=${
-    import.meta.env.MAP_API_KEY
+    import.meta.env.VITE_MAP_API_KEY
   }`;
 
   //weather api url
