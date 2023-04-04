@@ -22,7 +22,7 @@ Check out my [Portfolio](http://NereidaRondon.com)
 
 🗺️I used the Google Map Directions API for the MAP page. The map is interactive and links to a bigger Google map for directions. 
 
-[Project GitHub Pages](https://nereidarondon.github.io/Weather/)
+[Project Website](https://myweatherdashboard.netlify.app/)
 
 
 <img src='https://user-images.githubusercontent.com/97356401/196056495-85a520b2-ef0b-4cfa-a7f5-366676115631.png' width='210' height='210' alt='Bitmoji cloud'/>
