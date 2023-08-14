@@ -5,7 +5,7 @@
 </picture>
 
 
-![GitHub last commit](https://img.shields.io/github/last-commit/nereidarondon/Weather?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/nereidarondon/weather-dashboard?style=for-the-badge)
 
 Check out my [Portfolio](http://NereidaRondon.com)
 
